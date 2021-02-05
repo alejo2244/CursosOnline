@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "Usuario";
+}
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/Detalle")
+
+<div class="container">
+    <div class="well well-sm">
+        <fieldset>
+            <legend class="text-center header">@ViewBag.Title.</legend>
+            <form id="formularioUsuario">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <div class="form-group">
+                            <input id="Nombres" name="Nombres"  type="text" placeholder="Nombres" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="form-group">
+                            <input id="PrimerApellido" name="PrimerApellido" type="text" placeholder="Primer Apellido" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="form-group">
+                            <input id="SegundoApellido" name="SegundoApellido" type="text" placeholder="Segundo Apellido" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <div class="form-group">
+                            <input id="FechaNacimiento" name="FechaNacimiento" type="date" placeholder="Fecha Nacimiento" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="form-group">
+                            <input id="LugarNacimiento" name="LugarNacimiento" type="text" placeholder="Lugar Nacimiento" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="form-group">
+                            <select id="Genero" name="Genero" class="form-control">
+                                <option value="">--Seleccione--</option>
+                                <option value="0">MASCULINO</option>
+                                <option value="1">FEMENINO</option>
+                                <option value="2">OTRO</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <input id="Direccion" name="Direccion" type="text" placeholder="Direccion" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <input id=" Pasatiempos" name="Pasatiempos" type="text" placeholder="Pasatiempos" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-md-6 col-xs-6 text-right">
+                            <button type="submit" onclick="enviarConsumo()" id="btnSave" class="btn btn-primary btn-lg">Guardar</button>
+                        </div>
+                        <div class="col-md-6 col-xs-6 text-left">
+                            <button type="button" onclick="regresar()" class="btn btn-danger btn-lg">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Cursos Online";
+}
+
+<div class="jumbotron">
+    <div class="well well-sm">
+        <fieldset>
+            <legend class="text-center header">Rango de edades.</legend>
+            <div class="col-md-12 col-xs-12">
+                <div class="center-block">
+                    <div id="tablaRangoEdades"></div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <div class="well well-sm">
+        <fieldset>
+            <legend class="text-center header">Cantidad de personas por genero.</legend>
+            <div id="tablaCantidadGeneros"></div>
+        </fieldset>
+    </div>
+    <div class="well well-sm">
+        <fieldset>
+            <legend class="text-center header">Tags Hobbies por persona.</legend>
+            <div id="tablaPasatiempos"></div>
+        </fieldset>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+<link href="~/Content/Tabulator/tabulator_modern.min.css" rel="stylesheet" />
+@Scripts.Render("~/TabulatorJS")
+@Scripts.Render("~/Home")

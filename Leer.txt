@@ -1,0 +1,5 @@
+1. Crear una base de datos SQL SERVER con el nombre: dbCursosOnline
+2. Ejecutar el archivo prueba.sql en la base de datos
+3. Ejecutar la solucion sisCursosOnline
+
+AUTOR: Jeison Alejandro Amezquita Hernandez

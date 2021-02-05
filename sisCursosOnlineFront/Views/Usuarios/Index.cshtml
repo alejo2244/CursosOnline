@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Registro Usuarios";
+}
+
+<div class="row">
+    <div class="well well-sm">
+        <fieldset>
+            <div class="row">
+                <div class="col-md-6 col-xs-6">
+                    <label>Filtrar por ID:</label>
+                    <input type="text" id="filtro" onkeyup="filtroID()" class="form-control" style="max-width: 200px;" />
+                </div>
+                <div class="col-md-6 col-xs-6 text-right">
+                    <button style="margin: 30px" type="button" onclick="crearDatos()" class="btn btn-primary btn-lg">Crear Usuario</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div id="tablaUsuarios"></div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</div>
+
+
+@Scripts.Render("~/bundles/jquery")
+<link href="~/Content/Tabulator/tabulator_modern.min.css" rel="stylesheet" />
+@Scripts.Render("~/TabulatorJS")
+@Scripts.Render("~/Usuario")
